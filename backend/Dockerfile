@@ -22,4 +22,5 @@ RUN pip install -r requirements.txt --no-cache-dir
 COPY . .
 
 # При старте контейнера запустить сервер разработки.
-CMD ["python", "manage.py", "runserver", "0:8001"]
+#CMD ["python", "manage.py", "runserver", "0:8001"]
+CMD ["./entrypoint.sh"]
