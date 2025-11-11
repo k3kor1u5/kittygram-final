@@ -10,8 +10,8 @@ jobs:
     # Разворачиваем окружение:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
-        fail-fast: false
         python-version: ["3.9", "3.10", "3.11"]
     steps:
     # Копируем код проекта:
