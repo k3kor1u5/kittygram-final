@@ -13,7 +13,7 @@ SECRET_KEY = os.environ.get('DJANGO_KEY')
 
 DEBUG = os.environ.get('DEBUG', 'False')
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS')
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS') if os.environ.get('ALLOWED_HOSTS') else ['*']
 
 STATIC_ROOT = "/app/collected_static"
 
